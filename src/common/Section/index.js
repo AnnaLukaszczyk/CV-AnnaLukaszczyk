@@ -1,6 +1,6 @@
 import { SectionTitle, SectionTitleShadow, StyledSection } from "./styled";
 
-export const Section = ({name}) => (
+export const Section = ({ name }) => (
 	<StyledSection>
 		<SectionTitleShadow>
 			<SectionTitle>{name}</SectionTitle>
