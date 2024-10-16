@@ -16,13 +16,34 @@ export const SectionTitle = styled.h2`
 	letter-spacing: 0.5px;
 	color: azure;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
-	background: linear-gradient(
+	background: ${({ $isMain }) =>
+		$isMain
+			? `linear-gradient(
+		10deg,
+		rgba(128, 128, 128, 1) 0%,
+		rgba(93, 93, 93, 1) 35%,
+		rgba(74, 74, 74, 1) 100%
+	);
+	`
+			: `linear-gradient(
 		10deg,
 		rgba(74, 146, 168, 1) 0%,
 		rgba(43, 108, 128, 1) 35%,
 		rgba(35, 94, 112, 1) 100%
-	);
-	clip-path: polygon(
+	)`};
+	clip-path: ${({ $isMain }) =>
+		$isMain
+			? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+			: `polygon(
 		0 0,
 		70% 0,
 		75% 48%,
@@ -31,5 +52,5 @@ export const SectionTitle = styled.h2`
 		75% 52%,
 		70% 100%,
 		0% 100%
-	);
+	)`};
 `;
