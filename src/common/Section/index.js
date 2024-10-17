@@ -6,6 +6,6 @@ export const Section = ({ name, isMain, content }) => (
 		<SectionTitleShadow>
 			<SectionTitle $isMain={isMain}>{name}</SectionTitle>
 		</SectionTitleShadow>
-		<List content={content} />
+		<List items={content} />
 	</StyledSection>
 );
