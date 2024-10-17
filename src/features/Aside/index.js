@@ -3,8 +3,32 @@ import { StyledAside } from "./styled";
 
 export const Aside = () => (
 	<StyledAside>
-		<Section name="Umiejętności" />
-		<Section name="Mocne strony" />
-		<Section name="Jak pracuję" content="skutecznie" />
+		<Section
+			name="Umiejętności"
+			content={[
+				"znajomość Responsive Web Design (RWD) i zasad projektowania UI",
+				"podstawowa znajomość: HTML, CSS (Flexbox, Grid), JavaScript, React",
+				"zdolność analitycznego myślenia",
+				"umiejętność efektywnego zarządzania czasem",
+				"bezproblemowa praca w zespole",
+				"język angielski - B1",
+			]}
+		/>
+		<Section
+			name="Mocne strony"
+			content={[
+				"kreatywność", 
+				"szybkie uczenie się"
+			]}
+		/>
+		<Section
+			name="Jak pracuję"
+			content={[
+				"energicznie", 
+				"zadaniowo", 
+				"skutecznie", 
+				"efektywnie"
+			]}
+		/>
 	</StyledAside>
 );
