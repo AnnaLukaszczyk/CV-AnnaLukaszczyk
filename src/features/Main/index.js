@@ -1,6 +1,6 @@
 import { Section } from "../../common/Section";
 import { Description, StyledMain } from "./styled";
-import { CertyficateLink } from "../../common/Links";
+import { CertyficateLink, PersonalHomepage } from "../../common/Links";
 import { List } from "../../common/List";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,34 +11,37 @@ export const Main = () => (
 			name="O mnie"
 			content={[
 				<Description>
-					Od około 1,5 roku interesuję się programowaniem. Praca w mundurze przestała mi sprawiać satysfakcję, a brak możliwości rozwoju skłonił mnie do podjęcia decyzji o zmianie branży. Szczególnie przypadł mi do gustu frontend, dlatego postanowiłam pogłębić swoją wiedzę w tym zakresie.
+					Od 1,5 roku interesuję się programowaniem, a moim sercem zawładnął frontend. Brak możliwości rozwoju w poprzedniej pracy skłonił mnie do zmiany branży, ponieważ nie lubię tkwić w miejscu - w każdym wyzwaniu widzę możliwości rozwoju. Uważam, że nie ma problemu, którego nie da się rozwiązać. Dążę do pracy w dynamicznym zespole, w którym mogłabym wykorzystać swoje umiejętności analityczne i kreatywność.
 				</Description>,
 			]}
 			showIcons={false}
 		/>
 		<Section
 			isMain
-			name="Edukacja"
+			name="Doświadczenie"
 			content={[
-				"06.11.2010 r. - Wyższa Szkoła Ekonomii i Innowacji w Lublinie - Wydział Administracji - magister",
+				<Description>
+					<span>
+						28.05.2007 r. - 09.06.2023 r. - Funkcjonariusz Straży Granicznej, ostatnie zajmowane stanowisko: Specjalista Zespołu Kontroli Ruchu Granicznego Grupy Granicznej Placówki SG w Dołhobyczowie:
+					</span>
+					<List
+						items={[
+							"zarządzanie i analiza dokumentacji oraz raportów, wyszukiwanie błędów z odprawy osób oraz pojazdów, co wymagało wysokiej dokładności i skrupulatności",
+							"rozwiązywanie problemów w szybko zmieniającym się środowisku, co wymagało umiejętności logicznego myślenia i skutecznego podejmowania decyzji",
+							"współpraca w zespole, organizacja działań oraz zarządzanie czasem i priorytetami w celu osiągnięcia wyznaczonych celów",
+							"współpraca z innymi służbami i instytucjami",
+						]}
+						isMain
+						customIcon={faMinus}
+					/>
+				</Description>,
 			]}
 		/>
 		<Section
 			isMain
-			name="Doświadczenie"
+			name="Wykształcenie"
 			content={[
-				<Description>
-					28.05.2007 r. - 09.06.2023 r. - Funkcjonariusz Straży Granicznej, ostatnie zajmowane stanowisko: Specjalista Zespołu Kontroli Ruchu Granicznego Grupy Granicznej Placówki SG w Dołhobyczowie.
-				</Description>,
-				<List
-					items={[
-						"kontrola dokumentów podróżnych",
-						"reagowanie na incydenty związane z bezpieczeństwem",
-						"współpraca z innymi służbami i instytucjami",
-					]}
-					isMain
-					customIcon={faMinus}
-				/>
+				"06.11.2010 r. - Wyższa Szkoła Ekonomii i Innowacji w Lublinie - Wydział Administracji - magister",
 			]}
 		/>
 		<Section
@@ -51,6 +54,6 @@ export const Main = () => (
 				</span>,
 			]}
 		/>
-		<Section isMain name="Projekty" content={[""]} />
+		<Section isMain name="Portfolio" content={[<Description>Zapraszam do zapoznania się z <PersonalHomepage /></Description>]} showIcons={false}/>
 	</StyledMain>
 );
