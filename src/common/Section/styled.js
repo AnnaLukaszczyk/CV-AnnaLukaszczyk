@@ -10,7 +10,7 @@ export const SectionTitleShadow = styled.div`
 
 export const SectionTitle = styled.h2`
 	padding: 3px 15px;
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -45,12 +45,12 @@ export const SectionTitle = styled.h2`
 	)`
 			: `polygon(
 		0 0,
-		70% 0,
-		75% 48%,
+		75% 0,
+		80% 48%,
 		100% 48%,
 		100% 51%,
-		75% 52%,
-		70% 100%,
+		80% 52%,
+		75% 100%,
 		0% 100%
 	)`};
 `;
