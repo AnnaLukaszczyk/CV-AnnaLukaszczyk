@@ -34,5 +34,12 @@ export const Aside = () => (
 				"efektywnie"
 			]}
 		/>
+				<Section
+			name="Zainteresowania"
+			content={[
+				"filmy i seriale kryminalne, detektywistyczne i prawnicze, które angażują w rozwiązywanie spraw i analizowanie złożonych sytuacji",
+				"lubię układać puzzle, które doskonale ćwiczą pamięć i rozwijają umiejętności logicznego myślenia"
+			]}
+		/>
 	</StyledAside>
 );
