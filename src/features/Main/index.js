@@ -11,7 +11,7 @@ export const Main = () => (
 			name="O mnie"
 			content={[
 				<Description>
-					Od 1,5 roku interesuję się programowaniem, a moim sercem zawładnął frontend. Brak możliwości rozwoju w poprzedniej pracy skłonił mnie do zmiany branży, ponieważ nie lubię tkwić w miejscu - w każdym wyzwaniu widzę możliwości rozwoju. Uważam, że nie ma problemu, którego nie da się rozwiązać. Dążę do pracy w dynamicznym zespole, w którym mogłabym wykorzystać swoje umiejętności analityczne i kreatywność.
+					Od 1,5 roku interesuję się programowaniem, a moim sercem zawładnął frontend. Brak możliwości rozwoju w poprzedniej pracy skłonił mnie do zmiany branży: nie lubię tkwić w miejscu, a w każdym wyzwaniu widzę możliwości rozwoju. Uważam, że nie ma problemu, którego nie da się rozwiązać. Dążę do pracy w dynamicznym zespole, w którym mogłabym wykorzystać swoje umiejętności analityczne i kreatywność.
 				</Description>,
 			]}
 			showIcons={false}
