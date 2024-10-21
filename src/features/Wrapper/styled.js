@@ -5,7 +5,7 @@ export const StyledWrapper = styled.div`
 	display: flex;
 	flex-direction: row-reverse;
 	margin: 50px 0;
-	width: 750px;
-	height: 1000px;
+	width: 820px;
+	height: 1100px;
 	background-color: #fff;
 `;
