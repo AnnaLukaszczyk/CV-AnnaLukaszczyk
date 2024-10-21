@@ -7,3 +7,7 @@ export const StyledMain = styled.main`
 	background-color: #e1e1e1;
 	overflow: hidden;
 `;
+
+export const Description = styled.p`
+	text-align: justify;
+`;
