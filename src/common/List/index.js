@@ -1,10 +1,13 @@
 import { ListItem, StyledList, Icon } from "./styled";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-export const List = ({ items = [] }) => (
+export const List = ({ items = [], isMain, showIcons = true, customIcon }) => (
 	<StyledList>
 		{items.map((item, index) => (
-			<ListItem key={index}><Icon icon={faCircle} />{item}</ListItem>
+			<ListItem key={index}>
+				{showIcons && <Icon icon={customIcon || faCircle} $isMain={isMain} />}
+				{item}
+			</ListItem>
 		))}
 	</StyledList>
 );
