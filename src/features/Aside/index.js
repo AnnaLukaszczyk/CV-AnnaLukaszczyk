@@ -8,6 +8,9 @@ export const Aside = () => (
 			content={[
 				"znajomość Responsive Web Design (RWD) i zasad projektowania UI",
 				"podstawowa znajomość: HTML, CSS (Flexbox, Grid), JavaScript, React",
+				"GitHub",
+				"Figma",
+				"Trello",
 				"zdolność analitycznego myślenia",
 				"umiejętność efektywnego zarządzania czasem",
 				"bezproblemowa praca w zespole",
@@ -17,7 +20,8 @@ export const Aside = () => (
 		<Section
 			name="Mocne strony"
 			content={[
-				"kreatywność", 
+				"kreatywność",
+				"dokładność i szczegółowość", 
 				"szybkie uczenie się"
 			]}
 		/>
