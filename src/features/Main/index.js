@@ -2,7 +2,7 @@ import { Section } from "../../common/Section";
 import { Description, StyledMain } from "./styled";
 import { CertyficateLink, PersonalHomepage } from "../../common/Links";
 import { List } from "../../common/List";
-import { faMinus } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 export const Main = () => (
 	<StyledMain>
@@ -32,7 +32,7 @@ export const Main = () => (
 							"współpraca z innymi służbami i instytucjami",
 						]}
 						isMain
-						customIcon={faMinus}
+						customIcon={faPlay}
 					/>
 				</Description>,
 			]}
