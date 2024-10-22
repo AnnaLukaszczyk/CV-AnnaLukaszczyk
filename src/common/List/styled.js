@@ -9,7 +9,7 @@ export const StyledList = styled.ul`
 export const ListItem = styled.li`
 	display: flex;
 	align-items: flex-start;
-	margin: 3px 0;
+	margin: ${({ $isMain }) => ($isMain ? "3px 12px" : "3px 0")};
 	font-size: 15px;
 	line-height: 1.4;
 `;
