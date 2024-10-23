@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const StyledHeader = styled.header`
 	position: absolute;
@@ -90,16 +89,18 @@ export const Name = styled.h1`
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
 `;
 
-export const Icon = styled(FontAwesomeIcon)`
-	margin-right: 10px;
-	filter: drop-shadow(1px 1px 2px rgb(26, 26, 26));
-`;
-
 export const Mail = styled.p`
 	margin: 10px 0;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
 `;
 
 export const PhoneNumber = styled.p`
+	display: inline-block;
+	text-shadow: 1px 1px 2px rgb(26, 26, 26);
+`;
+
+export const Address = styled.p`
+	display: inline-block;
+	margin-left: 30px;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
 `;
