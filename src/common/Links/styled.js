@@ -89,5 +89,5 @@ export const Link = styled.a`
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
-	animation: ${blinkAnimation} 4s infinite;
+	animation: ${blinkAnimation} 3s infinite;
 `;
