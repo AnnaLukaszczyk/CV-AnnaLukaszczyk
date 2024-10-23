@@ -10,12 +10,12 @@ import {
 	Photo,
 	NameAndContact,
 	Name,
-  Icon,
   Mail,
   PhoneNumber,
+	Address
 } from "./styled";
 import CVPhoto from "./CV-photo.jpg";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { AddressLink, EmailLink, PhoneNumberLink } from "../../common/Links";
 
 export const Header = () => (
 	<StyledHeader>
@@ -38,8 +38,9 @@ export const Header = () => (
 			</PhotoBackground>
 			<NameAndContact>
 				<Name>Anna Łukaszczyk</Name>
-        <Mail><Icon icon={faEnvelope} />anna.lukaszczyk222@gmail.com</Mail>
-        <PhoneNumber><Icon icon={faPhone} />+48 607 17 44 33</PhoneNumber>
+        <Mail><EmailLink /></Mail>
+        <PhoneNumber><PhoneNumberLink /></PhoneNumber>
+				<Address><AddressLink /></Address>
 			</NameAndContact>
 		</Data>
 	</StyledHeader>
