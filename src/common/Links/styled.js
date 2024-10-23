@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const blinkAnimation = keyframes`
   0%, 100% {
@@ -11,16 +11,16 @@ const blinkAnimation = keyframes`
 `;
 
 export const Link = styled.a`
-color: black;
-font-weight: bold;
-text-decoration: none;
-animation: ${blinkAnimation} 4s infinite;
-`
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	animation: ${blinkAnimation} 4s infinite;
+`;
 
 export const ContactLink = styled.a`
-color: azure;
-text-decoration: none;
-`
+	color: azure;
+	text-decoration: none;
+`;
 
 export const Icon = styled(FontAwesomeIcon)`
 	margin-right: 10px;
