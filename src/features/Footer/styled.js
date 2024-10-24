@@ -11,6 +11,10 @@ export const Layers = styled.div`
 	height: 100px;
 	width: 100%;
 	overflow: hidden;
+
+	@media (max-width: 920px) {
+		height: 120px;
+	}
 `;
 
 export const LayerBox = styled.div`

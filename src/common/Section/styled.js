@@ -53,4 +53,8 @@ export const SectionTitle = styled.h2`
 		75% 100%,
 		0% 100%
 	)`};
+
+@media (max-width: 920px) {
+		font-size: 17px;
+	}
 `;

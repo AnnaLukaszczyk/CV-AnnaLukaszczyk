@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const StyledList = styled.ul`
 	margin: 10px 10px 0 10px;
 	list-style: none;
+
+	@media (max-width: 920px) {
+		margin: 10px 8px 0 10px;
+	}
 `;
 
 export const ListItem = styled.li`
@@ -12,6 +16,12 @@ export const ListItem = styled.li`
 	margin: ${({ $isMain }) => ($isMain ? "3px 12px" : "3px 0")};
 	font-size: 15px;
 	line-height: 1.4;
+
+	@media (max-width: 920px) {
+		margin: ${({ $isMain }) => ($isMain ? "3px 8px" : "3px 0")};
+		font-size: 14px;
+		line-height: 1.3;
+	}
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
