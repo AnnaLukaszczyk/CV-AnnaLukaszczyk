@@ -54,7 +54,7 @@ export const SectionTitle = styled.h2`
 		0% 100%
 	)`};
 
-@media (max-width: 920px) {
+@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		font-size: 17px;
 	}
 `;

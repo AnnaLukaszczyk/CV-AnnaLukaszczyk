@@ -12,7 +12,7 @@ export const Layers = styled.div`
 	width: 100%;
 	overflow: hidden;
 
-	@media (max-width: 920px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		height: 120px;
 	}
 `;

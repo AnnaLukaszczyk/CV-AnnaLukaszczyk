@@ -5,7 +5,7 @@ export const StyledList = styled.ul`
 	margin: 10px 10px 0 10px;
 	list-style: none;
 
-	@media (max-width: 920px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		margin: 10px 8px 0 10px;
 	}
 `;
@@ -17,7 +17,7 @@ export const ListItem = styled.li`
 	font-size: 15px;
 	line-height: 1.4;
 
-	@media (max-width: 920px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		margin: ${({ $isMain }) => ($isMain ? "3px 8px" : "3px 0")};
 		font-size: 14px;
 		line-height: 1.3;
