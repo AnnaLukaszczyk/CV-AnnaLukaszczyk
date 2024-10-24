@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CV-AnnaLukaszczyk/static/css/main.659eaf0a.css",
-    "main.js": "/CV-AnnaLukaszczyk/static/js/main.719fcec5.js",
+    "main.js": "/CV-AnnaLukaszczyk/static/js/main.0f6c16fd.js",
     "static/js/453.6bf921a5.chunk.js": "/CV-AnnaLukaszczyk/static/js/453.6bf921a5.chunk.js",
     "static/media/CV-photo.jpg": "/CV-AnnaLukaszczyk/static/media/CV-photo.8f7f83fb1bce2772dc38.jpg",
     "index.html": "/CV-AnnaLukaszczyk/index.html",
     "main.659eaf0a.css.map": "/CV-AnnaLukaszczyk/static/css/main.659eaf0a.css.map",
-    "main.719fcec5.js.map": "/CV-AnnaLukaszczyk/static/js/main.719fcec5.js.map",
+    "main.0f6c16fd.js.map": "/CV-AnnaLukaszczyk/static/js/main.0f6c16fd.js.map",
     "453.6bf921a5.chunk.js.map": "/CV-AnnaLukaszczyk/static/js/453.6bf921a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.659eaf0a.css",
-    "static/js/main.719fcec5.js"
+    "static/js/main.0f6c16fd.js"
   ]
 }
