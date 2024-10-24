@@ -8,4 +8,8 @@ export const StyledWrapper = styled.div`
 	max-width: 820px;
 	height: 1100px;
 	background-color: #fff;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+		margin: 5.5vw;
+	}
 `;
