@@ -54,6 +54,10 @@ export const Data = styled.div`
 	display: flex;
 	left: 56px;
 	top: 20px;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+		left: 5.5vw;
+	}
 `;
 
 export const PhotoBackground = styled.div`
@@ -68,16 +72,30 @@ export const PhotoBackground = styled.div`
 		rgba(146, 203, 221, 1) 0%,
 		rgba(34, 89, 105, 1) 100%
 	);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		height: 156px;
+		width: 126px;
+	}
 `;
 
 export const Photo = styled.img`
 	height: 180px;
 	width: 144px;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		height: 150px;
+		width: 120px;
+	}
 `;
 
 export const NameAndContact = styled.div`
 	margin-left: 100px;
 	color: azure;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+		margin-left: 10vw;
+	}
 `;
 
 export const Name = styled.h1`
@@ -87,6 +105,10 @@ export const Name = styled.h1`
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		font-size: 28px;
+	}
 `;
 
 export const Mail = styled.p`
