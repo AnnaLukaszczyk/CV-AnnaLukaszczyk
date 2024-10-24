@@ -56,5 +56,27 @@ export const SectionTitle = styled.h2`
 
 @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		font-size: 17px;
+		clip-path: ${({ $isMain }) =>
+		$isMain
+			? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+			: `polygon(
+		0 0,
+		200px 0,
+		214px 48%,
+		100% 48%,
+		100% 51%,
+		214px 52%,
+		200px 100%,
+		0% 100%
+	)`};
 	}
 `;
