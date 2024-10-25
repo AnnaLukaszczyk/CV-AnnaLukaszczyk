@@ -81,6 +81,7 @@ export const SectionTitle = styled.h2`
 	}
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		padding: 3px 10px;
 		font-size: 16px;
 		clip-path: ${({ $isMain }) =>
 			$isMain
@@ -96,12 +97,39 @@ export const SectionTitle = styled.h2`
 	)`
 				: `polygon(
 		0 0,
-		180px 0,
-		194px 48%,
+		174px 0,
+		188px 48%,
 		100% 48%,
 		100% 51%,
-		194px 52%,
-		180px 100%,
+		188px 52%,
+		174px 100%,
+		0% 100%
+	)`};
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		padding: 3px 8px;
+		font-size: 14.5px;
+		clip-path: ${({ $isMain }) =>
+			$isMain
+				? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+				: `polygon(
+		0 0,
+		154px 0,
+		168px 48%,
+		100% 48%,
+		100% 51%,
+		168px 52%,
+		154px 100%,
 		0% 100%
 	)`};
 	}

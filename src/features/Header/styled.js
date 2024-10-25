@@ -17,6 +17,10 @@ export const Layers = styled.div`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		height: 170px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		height: 144px;
+	}
 `;
 
 export const LayerBox = styled.div`
@@ -81,6 +85,11 @@ export const PhotoBackground = styled.div`
 		height: 156px;
 		width: 126px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		height: 132px;
+		width: 107px;
+	}
 `;
 
 export const Photo = styled.img`
@@ -91,6 +100,11 @@ export const Photo = styled.img`
 		height: 150px;
 		width: 120px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		height: 126px;
+		width: 101px;
+	}
 `;
 
 export const NameAndContact = styled.div`
@@ -99,6 +113,10 @@ export const NameAndContact = styled.div`
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		margin-left: 10vw;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		font-size: 14px;
 	}
 `;
 
@@ -114,6 +132,11 @@ export const Name = styled.h1`
 		margin-top: 10px;
 		font-size: 28px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		margin-top: 4px;
+		font-size: 24px;
+	}
 `;
 
 export const Mail = styled.p`
@@ -122,6 +145,10 @@ export const Mail = styled.p`
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		margin: 6px 0;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		margin: 4px 0;
 	}
 `;
 
@@ -134,4 +161,8 @@ export const Address = styled.p`
 	display: inline-block;
 	margin-left: 30px;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		margin-left: 26px;
+	}
 `;

@@ -10,6 +10,10 @@ export const StyledMain = styled.main`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		padding-top: 170px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		padding-top: 140px;
+	}
 `;
 
 export const Description = styled.p`

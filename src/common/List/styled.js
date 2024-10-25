@@ -26,6 +26,11 @@ export const ListItem = styled.li`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		font-size: 13.5px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		margin: ${({ $isMain }) => ($isMain ? "3px 4px" : "3px 0")};
+		font-size: 13px;
+	}
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
