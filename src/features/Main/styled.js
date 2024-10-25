@@ -6,6 +6,10 @@ export const StyledMain = styled.main`
 	width: 65%;
 	background-color: #e1e1e1;
 	overflow: hidden;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		padding-top: 170px;
+	}
 `;
 
 export const Description = styled.p`

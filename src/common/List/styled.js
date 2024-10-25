@@ -22,6 +22,10 @@ export const ListItem = styled.li`
 		font-size: 14px;
 		line-height: 1.3;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		font-size: 13.5px;
+	}
 `;
 
 export const Icon = styled(FontAwesomeIcon)`

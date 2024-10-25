@@ -71,10 +71,15 @@ export const Button = styled.button`
 
 export const Info = styled.p`
 	position: absolute;
+	margin: 0 8px;
 	text-align: center;
 	bottom: 8px;
 	right: 50px;
 	font-size: 10px;
 	color: transparent;
 	transition: color 0.8s ease-in-out;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		font-size: 9px;
+	}
 `;

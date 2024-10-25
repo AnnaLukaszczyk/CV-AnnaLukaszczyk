@@ -13,6 +13,10 @@ export const Layers = styled.div`
 	position: relative;
 	height: 200px;
 	width: 100%;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		height: 170px;
+	}
 `;
 
 export const LayerBox = styled.div`
@@ -107,6 +111,7 @@ export const Name = styled.h1`
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		margin-top: 10px;
 		font-size: 28px;
 	}
 `;
@@ -114,6 +119,10 @@ export const Name = styled.h1`
 export const Mail = styled.p`
 	margin: 10px 0;
 	text-shadow: 1px 1px 2px rgb(26, 26, 26);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		margin: 6px 0;
+	}
 `;
 
 export const PhoneNumber = styled.p`

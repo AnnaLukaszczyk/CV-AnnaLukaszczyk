@@ -7,4 +7,8 @@ export const StyledAside = styled.aside`
 	box-shadow: 2px 0 3px gray;
 	overflow: hidden;
 	z-index: 1;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		padding-top: 200px;
+	}
 `;
