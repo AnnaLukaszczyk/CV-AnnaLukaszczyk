@@ -86,4 +86,8 @@ export const Info = styled.p`
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		font-size: 8px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		font-size: 7px;
+	}
 `;

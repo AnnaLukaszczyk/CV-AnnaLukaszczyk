@@ -191,4 +191,31 @@ export const SectionTitle = styled.h2`
 		0% 100%
 	)`};
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+		padding: 2px 3px;
+		font-size: 11px;
+		clip-path: ${({ $isMain }) =>
+			$isMain
+				? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+				: `polygon(
+		0 0,
+		110px 0,
+		118px 48%,
+		100% 48%,
+		100% 51%,
+		118px 52%,
+		110px 100%,
+		0% 100%
+	)`};
+	}
 `;
