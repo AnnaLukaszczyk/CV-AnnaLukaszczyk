@@ -5,5 +5,6 @@ export const theme = {
 		tabletSmall: 644,
 		mobileLarge: 575,
 		mobile: 479,
+    mobileMedium: 411,
 	},
 };
