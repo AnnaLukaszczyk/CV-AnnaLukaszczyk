@@ -8,6 +8,10 @@ export const StyledList = styled.ul`
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: 10px 8px 0 10px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		margin: 6px 8px 0 6px;
+	}
 `;
 
 export const ListItem = styled.li`
@@ -35,6 +39,11 @@ export const ListItem = styled.li`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		margin: ${({ $isMain }) => ($isMain ? "0" : "0")};
 		font-size: 12.5px;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		margin: ${({ $isMain }) => ($isMain ? "0" : "0")};
+		font-size: 12px;
 	}
 `;
 

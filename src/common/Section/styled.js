@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
 	margin: 16px 0;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		margin: 12px 0;
+	}
 `;
 
 export const SectionTitleShadow = styled.div`
@@ -125,10 +129,10 @@ export const SectionTitle = styled.h2`
 				: `polygon(
 		0 0,
 		154px 0,
-		168px 48%,
+		166px 48%,
 		100% 48%,
 		100% 51%,
-		168px 52%,
+		166px 52%,
 		154px 100%,
 		0% 100%
 	)`};
@@ -153,11 +157,37 @@ export const SectionTitle = styled.h2`
 				: `polygon(
 		0 0,
 		138px 0,
-		152px 48%,
+		148px 48%,
 		100% 48%,
 		100% 51%,
-		152px 52%,
+		148px 52%,
 		138px 100%,
+		0% 100%
+	)`};
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		font-size: 12px;
+		clip-path: ${({ $isMain }) =>
+			$isMain
+				? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+				: `polygon(
+		0 0,
+		118px 0,
+		128px 48%,
+		100% 48%,
+		100% 51%,
+		128px 52%,
+		118px 100%,
 		0% 100%
 	)`};
 	}

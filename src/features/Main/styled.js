@@ -14,6 +14,9 @@ export const StyledMain = styled.main`
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		padding-top: 140px;
 	}
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		padding-top: 130px;
+	}
 `;
 
 export const Description = styled.p`

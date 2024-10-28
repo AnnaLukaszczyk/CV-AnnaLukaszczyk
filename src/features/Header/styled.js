@@ -21,6 +21,10 @@ export const Layers = styled.div`
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		height: 144px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		height: 134px;
+	}
 `;
 
 export const LayerBox = styled.div`
@@ -90,6 +94,11 @@ export const PhotoBackground = styled.div`
 		height: 132px;
 		width: 107px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		height: 112px;
+		width: 91px;
+	}
 `;
 
 export const Photo = styled.img`
@@ -105,6 +114,11 @@ export const Photo = styled.img`
 		height: 126px;
 		width: 101px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		height: 108px;
+		width: 87px;
+	}
 `;
 
 export const NameAndContact = styled.div`
@@ -117,6 +131,10 @@ export const NameAndContact = styled.div`
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		font-size: 14px;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		margin-left: 7vw;
 	}
 `;
 
@@ -136,6 +154,10 @@ export const Name = styled.h1`
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		margin-top: 4px;
 		font-size: 24px;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+		font-size: 22px;
 	}
 `;
 
