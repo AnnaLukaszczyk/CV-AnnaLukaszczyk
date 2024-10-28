@@ -135,7 +135,30 @@ export const SectionTitle = styled.h2`
 	}
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
-		padding: 2px 6px;
+		padding: 2px 5px;
 		font-size: 14px;
+		letter-spacing: 0;
+		clip-path: ${({ $isMain }) =>
+			$isMain
+				? `polygon(
+		0 0,
+		50% 0,
+		53% 48%,
+		100% 48%,
+		100% 51%,
+		53% 52%,
+		50% 100%,
+		0% 100%
+	)`
+				: `polygon(
+		0 0,
+		138px 0,
+		152px 48%,
+		100% 48%,
+		100% 51%,
+		152px 52%,
+		138px 100%,
+		0% 100%
+	)`};
 	}
 `;
