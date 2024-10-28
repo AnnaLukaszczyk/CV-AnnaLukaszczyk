@@ -12,7 +12,7 @@ export const Layers = styled.div`
 	width: 100%;
 	overflow: hidden;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		height: 120px;
 	}
 `;
@@ -79,11 +79,11 @@ export const Info = styled.p`
 	color: transparent;
 	transition: color 0.8s ease-in-out;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		font-size: 9px;
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		font-size: 8px;
 	}
 `;

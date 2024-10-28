@@ -7,11 +7,11 @@ export const StyledMain = styled.main`
 	background-color: #e1e1e1;
 	overflow: hidden;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		padding-top: 170px;
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		padding-top: 140px;
 	}
 `;

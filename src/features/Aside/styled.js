@@ -8,11 +8,11 @@ export const StyledAside = styled.aside`
 	overflow: hidden;
 	z-index: 1;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		padding-top: 200px;
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		padding-top: 170px;
 	}
 `;

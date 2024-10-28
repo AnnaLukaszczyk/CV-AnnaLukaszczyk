@@ -5,7 +5,7 @@ export const StyledList = styled.ul`
 	margin: 10px 10px 0 10px;
 	list-style: none;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: 10px 8px 0 10px;
 	}
 `;
@@ -17,19 +17,24 @@ export const ListItem = styled.li`
 	font-size: 15px;
 	line-height: 1.4;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: ${({ $isMain }) => ($isMain ? "3px 8px" : "3px 0")};
 		font-size: 14px;
 		line-height: 1.3;
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		font-size: 13.5px;
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		margin: ${({ $isMain }) => ($isMain ? "3px 4px" : "3px 0")};
 		font-size: 13px;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		margin: ${({ $isMain }) => ($isMain ? "0" : "0")};
+		font-size: 12.5px;
 	}
 `;
 

@@ -54,7 +54,7 @@ export const SectionTitle = styled.h2`
 		0% 100%
 	)`};
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		font-size: 17px;
 		clip-path: ${({ $isMain }) =>
 			$isMain
@@ -80,7 +80,7 @@ export const SectionTitle = styled.h2`
 	)`};
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
 		padding: 3px 10px;
 		font-size: 16px;
 		clip-path: ${({ $isMain }) =>
@@ -107,7 +107,7 @@ export const SectionTitle = styled.h2`
 	)`};
 	}
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletSmall}px) {
 		padding: 3px 8px;
 		font-size: 14.5px;
 		clip-path: ${({ $isMain }) =>
@@ -132,5 +132,10 @@ export const SectionTitle = styled.h2`
 		154px 100%,
 		0% 100%
 	)`};
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		padding: 2px 6px;
+		font-size: 14px;
 	}
 `;

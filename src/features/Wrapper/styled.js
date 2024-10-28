@@ -9,7 +9,11 @@ export const StyledWrapper = styled.div`
 	height: 1100px;
 	background-color: #fff;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: 5.5vw;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
+		margin: 10px;
 	}
 `;
