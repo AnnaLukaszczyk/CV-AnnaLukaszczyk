@@ -16,4 +16,8 @@ export const StyledWrapper = styled.div`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		margin: 10px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		height: calc(100vh - 20px);
+	}
 `;
