@@ -67,6 +67,10 @@ export const Button = styled.button`
 	&:hover + p {
 		color: azure;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		visibility: hidden;
+	}
 `;
 
 export const Info = styled.p`
@@ -89,5 +93,9 @@ export const Info = styled.p`
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
 		font-size: 7px;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		visibility: hidden;
 	}
 `;
