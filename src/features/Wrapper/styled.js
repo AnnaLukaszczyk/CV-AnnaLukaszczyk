@@ -6,8 +6,8 @@ export const StyledWrapper = styled.div`
 	flex-direction: row-reverse;
 	margin: 50px;
 	max-width: 820px;
-	height: 1100px;
 	background-color: #fff;
+	overflow: hidden;
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: 5.5vw;
