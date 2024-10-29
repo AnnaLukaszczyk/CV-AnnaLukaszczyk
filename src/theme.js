@@ -6,6 +6,6 @@ export const theme = {
 		mobileLarge: 575,
 		mobile: 479,
 		mobileMedium: 411,
-		mobileSmall: 385,
+		mobileSmall: 365,
 	},
 };
