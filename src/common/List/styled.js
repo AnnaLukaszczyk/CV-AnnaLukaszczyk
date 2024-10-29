@@ -20,6 +20,7 @@ export const ListItem = styled.li`
 	margin: ${({ $isMain }) => ($isMain ? "3px 12px" : "3px 0")};
 	font-size: 15px;
 	line-height: 1.4;
+	text-align: ${({ $isMain }) => ($isMain ? "justify" : "left")};
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.tabletLarge}px) {
 		margin: ${({ $isMain }) => ($isMain ? "3px 8px" : "3px 0")};
