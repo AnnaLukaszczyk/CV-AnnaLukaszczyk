@@ -23,4 +23,8 @@ export const StyledAside = styled.aside`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
 		padding-top: 130px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		width: 0%;
+	}
 `;
