@@ -213,12 +213,12 @@ export const SectionTitle = styled.h2`
 	)`
 				: `polygon(
 		0 0,
-		110px 0,
-		118px 48%,
+		107px 0,
+		115px 48%,
 		100% 48%,
 		100% 51%,
-		118px 52%,
-		110px 100%,
+		115px 52%,
+		107px 100%,
 		0% 100%
 	)`};
 	}
