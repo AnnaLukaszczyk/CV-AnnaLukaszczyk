@@ -78,6 +78,10 @@ export const Data = styled.div`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileLarge}px) {
 		top: 14px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		visibility: hidden;
+	}
 `;
 
 export const PhotoBackground = styled.div`
@@ -218,3 +222,17 @@ export const Address = styled.p`
 		margin-left: 22px;
 	}
 `;
+
+export const Info = styled.p`
+position: absolute;
+width: 100%;
+top: 20px;
+text-align: center;
+color: azure;
+font-size: 20px;
+visibility: hidden;
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+	visibility: visible;
+	}
+`
