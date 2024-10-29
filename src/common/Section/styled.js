@@ -6,6 +6,10 @@ export const StyledSection = styled.section`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
 		margin: 12px 0;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		visibility: hidden;
+	}
 `;
 
 export const SectionTitleShadow = styled.div`
