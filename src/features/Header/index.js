@@ -10,9 +10,10 @@ import {
 	Photo,
 	NameAndContact,
 	Name,
-  Mail,
-  PhoneNumber,
-	Address
+	Mail,
+	PhoneNumber,
+	Address,
+	Info,
 } from "./styled";
 import CVPhoto from "./CV-photo.jpg";
 import { AddressLink, EmailLink, PhoneNumberLink } from "../../common/Links";
@@ -38,10 +39,17 @@ export const Header = () => (
 			</PhotoBackground>
 			<NameAndContact>
 				<Name>Anna Łukaszczyk</Name>
-        <Mail><EmailLink /></Mail>
-        <PhoneNumber><PhoneNumberLink /></PhoneNumber>
-				<Address><AddressLink /></Address>
+				<Mail>
+					<EmailLink />
+				</Mail>
+				<PhoneNumber>
+					<PhoneNumberLink />
+				</PhoneNumber>
+				<Address>
+					<AddressLink />
+				</Address>
 			</NameAndContact>
 		</Data>
+		<Info>Obróć telefon aby zobaczyć CV</Info>
 	</StyledHeader>
 );
