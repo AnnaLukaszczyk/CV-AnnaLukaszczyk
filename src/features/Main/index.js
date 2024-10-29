@@ -48,13 +48,10 @@ export const Main = () => {
 						isMain
 						name="Doświadczenie"
 						content={[
-							<Description>
-								<span>
-									28.05.2007 r. - 09.06.2023 r. - Funkcjonariusz Straży
-									Granicznej, ostatnie zajmowane stanowisko: Specjalista Zespołu
-									Kontroli Ruchu Granicznego Grupy Granicznej Placówki SG w
-									Dołhobyczowie:
-								</span>
+							<div>
+								<Description>
+									28.05.2007 r. - 09.06.2023 r. - Funkcjonariusz Straży Granicznej, ostatnie zajmowane stanowisko: Specjalista Zespołu Kontroli Ruchu Granicznego Grupy Granicznej Placówki SG w Dołhobyczowie:
+								</Description>
 								<List
 									items={[
 										"zarządzanie i analiza dokumentacji oraz raportów, wyszukiwanie błędów z odprawy osób oraz pojazdów, co wymagało wysokiej dokładności i skrupulatności",
@@ -65,7 +62,7 @@ export const Main = () => {
 									isMain
 									customIcon={faPlay}
 								/>
-							</Description>,
+							</div>
 						]}
 					/>
 					<Section
