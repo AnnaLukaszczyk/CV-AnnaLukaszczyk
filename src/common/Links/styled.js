@@ -19,7 +19,7 @@ const jumpAnimation = keyframes`
   }
 `;
 
-const blinkAnimation = keyframes`
+const blinkLinkAnimation = keyframes`
   0%, 100% {
     color: black;
   }
@@ -89,5 +89,5 @@ export const Link = styled.a`
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
-	animation: ${blinkAnimation} 3s infinite;
+	animation: ${blinkLinkAnimation} 3s infinite;
 `;
