@@ -22,6 +22,10 @@ export const StyledMain = styled.main`
 	@media (max-width: ${({ theme }) => theme.breakpoints.mobileMedium}px) {
 		padding-top: 110px;
 	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+		width: 100%;
+	}
 `;
 
 export const Description = styled.p`
