@@ -10,7 +10,7 @@ export const Main = () => {
 	const [isMobileSmall, setIsMobileSmall] = useState(false);
 
 	const handleResize = () => {
-		setIsMobileSmall(window.innerWidth < 386);
+		setIsMobileSmall(window.innerWidth < 366);
 	};
 
 	useEffect(() => {
