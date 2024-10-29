@@ -28,7 +28,7 @@ const blinkLinkAnimation = keyframes`
   }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.span`
 	position: relative;
 	display: inline-block;
 	margin-right: 25px;
