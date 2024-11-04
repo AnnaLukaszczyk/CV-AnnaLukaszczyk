@@ -14,7 +14,7 @@ export const Aside = () => (
 				"zdolność analitycznego myślenia",
 				"umiejętność efektywnego zarządzania czasem",
 				"bezproblemowa praca w zespole",
-				"język angielski - B1",
+				"język angielski - B2",
 			]}
 		/>
 		<Section
